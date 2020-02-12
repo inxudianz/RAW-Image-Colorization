@@ -1,7 +1,7 @@
-#RAW Image Colorization
+# RAW Image Colorization
 
 To run the app:
-<code>app.py</code>
+`app.py`
 
 download model here:
 
