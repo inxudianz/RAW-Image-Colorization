@@ -1,4 +1,4 @@
-<h1>RAW Image Colorization </h1>
+#RAW Image Colorization
 
 To run the app:
 <code>app.py</code>
