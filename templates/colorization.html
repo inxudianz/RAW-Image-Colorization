@@ -1,0 +1,16 @@
+{% extends 'master.html' %}
+
+{% block content %}
+<h1>Colorization Result</h1>
+
+<div id="image">
+    <img id="output" src="{{url_for('static', filename='img/0_image.png')}}" />
+    <img id="output2" src="{{url_for('static', filename='img/0_out_bgr.png')}}" />
+</div>
+
+<div>
+    <form>
+        <button type="submit" class="button" formaction="{{url_for('home_page')}}">Back to Home</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+img_rows, img_cols = 256, 256
+channel = 3
+batch_size = 1
+epochs = 100
+patience = 20
+num_train_samples = 1
+num_valid_samples = 1
+num_classes = 313
+kernel = 3
+nb_neighbors = 4
+T = 0.32
+epsilon = 1e-8

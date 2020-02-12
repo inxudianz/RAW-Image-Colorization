@@ -1,0 +1,22 @@
+{% extends 'master.html' %}
+
+{% block content %}
+<h1 class="title">Automatic Image Colorization</h1>
+<h3 class="title">Colorize Grayscale Images</h3>
+
+<div id="image">
+    <img id="output" src="https://image.flaticon.com/icons/svg/16/16410.svg" />
+</div>
+
+<div>
+    <form method="POST" action="{{url_for('color_page')}}" enctype="multipart/form-data">
+        <input type="file" accept="image/*" onchange="loadFile(event)" name="image" id="image">
+        <br>
+        <input type="submit", id="button" value="Colorize It!" onclick="showProgress()">
+    </form>
+</div>
+<div id="progress">
+    <p>Processing your image...</p>
+    <progress value="30" max="100" id="progress_value"></progress>
+</div>
+{% endblock %}
